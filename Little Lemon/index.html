@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheets" href="styles.css">
+    <title>Little Lemon</title>
+    <!-- open graph protocol meta data -->
+    <meta property ="og:title" content="Our Menu">
+    <meta property ="og:type" content="website">
+    <meta property = "og:image" content="logo.png">
+    <meta property = "og:url" content="https://littlelemon">
+    <meta property = "og:description" content="Little Lemon is a family-owned restaurant, focused on traditional recipes served with a modern twist."></head>
+    <meta property = "og:locale" content="en-us">
+    <meta property = "og:site_name" content = "Little Lemon">
+    </head>
+    <body>
+    <header>
+        <nav>
+        </nav>
+        <main>
+            <h1>Sign Up</h1>
+            <form>
+                <div>
+                    <label for="user_first_name">First Name</label><br>
+                    <input type="text" id="user_first_name" name="user_first_name" required minlength="3" maxlength="12">
+                </div>
+                <div>
+                    <label for="user_last_name">Last Name</label><br>
+                    <input type="text" id="user_last_name" name="user_last_name">
+                </div>
+                <div>
+                    <label for="user_email" >Email</label><br>
+                    <input type="email" id="user_email" name="user_email">
+                </div>
+                <div>
+                    <label for="user_password">Password</label><br>
+                    <input type="password" id="user_password" name="user_password"> 
+                </div>
+                <div>
+                    <label for="user_confirm_password">Confirm Password</label><br>
+                    <input type="password" id="user_confirm_password" name="user_confirm_password">
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Sign Up</button><br>
+                </div>
+            </form>
+        </main>
+        <h2>Book a Table</h2>
+        <form method="POST">
+          <div>
+            <label for="booking-date">Booking Date</label>
+            <input type="date" id="booking-date" name="booking_date">
+          </div>
+          <div>
+            <label for="booking_people">Number Of People</label>
+            <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value=this.value">
+            <output>4</output>
+          </div>
+          <div>
+            <label for="booking_location">Booking Location</label>
+            <input id="booking_location" name="booking_location" list="locations">
+            <datalist id="locations">
+            <option value="Downtown"></option>
+            <option value="Uptown"></option>
+        </datalist>
+        </div>
+            <div>
+            <button type="submit">Book Table</button>
+        </div>
+        </form>
+        <h3>Little LEmon is a....</h3>
+        <video controls width="320" height="240">
+            <source src="video.mp4" type="video/mp4">
+          </video>
+        
+          <form>
+            <div>
+              <label for="rating">Rating</label>
+              <input type="range" min="1" max="5" id="rating" name="rating" list="ratings">
+              <datalist id="ratings">
+                  <option value="1" label="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                  <option value="5" label="5"></option>
+              </datalist>
+            </div>
+            <button type="submit">Submit Rating</button>
+          </form>
+    </header>
+<footer>
+    <p>Copyright Little Lemon</p>
+</footer>
+</body>
+</html>
